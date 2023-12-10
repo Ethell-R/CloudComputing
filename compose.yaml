@@ -8,10 +8,10 @@ services:
                 volumes:
                         - ./app/:/app
                 environment:
-                MYSQL_HOST: mysql
-                MYSQL_USER: root
-                MYSQL_PASSWORD: secret
-                MYSQL_DB: todos
+                        MYSQL_HOST: mysql
+                        MYSQL_USER: root
+                        MYSQL_PASSWORD: secret
+                        MYSQL_DB: todos
         
         ro:
                 image: node:18-alpine
@@ -22,10 +22,10 @@ services:
                 volumes:
                         - ./ro/:/app
                 environment:
-                MYSQL_HOST: mysql
-                MYSQL_USER: root
-                MYSQL_PASSWORD: secret
-                MYSQL_DB: todos
+                        MYSQL_HOST: mysql
+                        MYSQL_USER: root
+                        MYSQL_PASSWORD: secret
+                        MYSQL_DB: todos
 
 
         mysql:
